@@ -1,0 +1,53 @@
+# ==============================================
+# .gitignore para proyectos NetLogo
+# ==============================================
+
+# Archivos temporales y de backup de NetLogo
+*.nlogo~
+*.nls~
+*.nlog~
+*.tmp
+*.temp
+
+# Archivos de autoguardado (backups automáticos)
+*.autosave.nlogo
+
+# Carpeta de exportación de resultados (si se generan automáticamente)
+/output/
+/exports/
+/results/
+
+# Logs de ejecución (si tu modelo genera logs)
+*.log
+/logs/
+
+# Archivos de datos temporales (si tu modelo exporta datos)
+*.csv.tmp
+*.txt.tmp
+
+# Configuraciones de IDE (opcional)
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Archivos de usuario (configuraciones locales)
+*.user.*
+/settings/
+
+# Extensiones/extras (si usas extensiones personalizadas)
+/extensions/*.jar
+!/extensions/README.md
+
+# ==============================================
+# ¡IMPORTANTE!
+# ==============================================
+# NO ignores estos archivos esenciales de NetLogo:
+# *.nlogo    <- Tu modelo principal
+# *.nls      <- Archivos de código fuente
+# *.nlog     <- Logs de experimentos (si son importantes
